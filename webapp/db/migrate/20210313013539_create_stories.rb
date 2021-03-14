@@ -1,0 +1,11 @@
+class CreateStories < ActiveRecord::Migration[6.1]
+  def change
+    create_table :stories do |t|
+      t.string :title
+      t.string :merchant
+      t.text :desc
+      t.text :image
+      t.timestamps
+    end
+  end
+end
